@@ -1,0 +1,101 @@
+---
+whiskers:
+  version: "^2.5.1"
+  matrix:
+    - flavor
+    - accent
+  filename: "catppuccin-{{flavor.identifier}}-{{accent}}.xrnc"
+---
+{% macro rgb(color) %}{{color.rgb.r}},{{color.rgb.g}},{{color.rgb.b}}{% endmacro rgb %}<?xml version="1.0" encoding="UTF-8"?>
+<SkinColors doc_version="12">
+  <Main_Back>{{self::rgb(color=base)}}</Main_Back>
+  <Main_Font>{{self::rgb(color=text)}}</Main_Font>
+  <Alternate_Main_Back>{{self::rgb(color=surface0)}}</Alternate_Main_Back>
+  <Alternate_Main_Font>{{self::rgb(color=subtext1)}}</Alternate_Main_Font>
+  <Body_Back>{{self::rgb(color=mantle)}}</Body_Back>
+  <Body_Font>{{self::rgb(color=subtext0)}}</Body_Font>
+  <Strong_Body_Font>{{self::rgb(color=text)}}</Strong_Body_Font>
+  <Button_Back>{{self::rgb(color=surface1)}}</Button_Back>
+  <Button_Font>{{self::rgb(color=text)}}</Button_Font>
+  <Button_Highlight_Font>{{self::rgb(color=flavor.colors[accent])}}</Button_Highlight_Font>
+  <Selected_Button_Back>{{self::rgb(color=flavor.colors[accent])}}</Selected_Button_Back>
+  <Selected_Button_Font>{{self::rgb(color=base)}}</Selected_Button_Font>
+  <Selection_Back>{{self::rgb(color=flavor.colors[accent])}}</Selection_Back>
+  <Selection_Font>{{self::rgb(color=base)}}</Selection_Font>
+  <StandBy_Selection_Back>{{self::rgb(color=surface1)}}</StandBy_Selection_Back>
+  <StandBy_Selection_Font>{{self::rgb(color=text)}}</StandBy_Selection_Font>
+  <Midi_Mapping_Back>{{self::rgb(color=flavor.colors[accent])}}</Midi_Mapping_Back>
+  <Midi_Mapping_Font>{{self::rgb(color=crust)}}</Midi_Mapping_Font>
+  <ToolTip_Back>{{self::rgb(color=text)}}</ToolTip_Back>
+  <ToolTip_Font>{{self::rgb(color=base)}}</ToolTip_Font>
+  <ValueBox_Back>{{self::rgb(color=mantle)}}</ValueBox_Back>
+  <ValueBox_Font>{{self::rgb(color=text)}}</ValueBox_Font>
+  <ValueBox_Font_Icons>{{self::rgb(color=subtext0)}}</ValueBox_Font_Icons>
+  <Scrollbar>{{self::rgb(color=surface0)}}</Scrollbar>
+  <Slider>{{self::rgb(color=text)}}</Slider>
+  <Folder>{{self::rgb(color=flavor.colors[accent])}}</Folder>
+  <Pattern_Default_Back>{{self::rgb(color=mantle)}}</Pattern_Default_Back>
+  <Pattern_Default_Font>{{self::rgb(color=subtext0)}}</Pattern_Default_Font>
+  <Pattern_Default_Font_Volume>{{self::rgb(color=pink)}}</Pattern_Default_Font_Volume>
+  <Pattern_Default_Font_Panning>{{self::rgb(color=blue)}}</Pattern_Default_Font_Panning>
+  <Pattern_Default_Font_Pitch>{{self::rgb(color=red)}}</Pattern_Default_Font_Pitch>
+  <Pattern_Default_Font_Delay>{{self::rgb(color=blue)}}</Pattern_Default_Font_Delay>
+  <Pattern_Default_Font_Global>{{self::rgb(color=rosewater)}}</Pattern_Default_Font_Global>
+  <Pattern_Default_Font_Other>{{self::rgb(color=mauve)}}</Pattern_Default_Font_Other>
+  <Pattern_Default_Font_DspFx>{{self::rgb(color=text)}}</Pattern_Default_Font_DspFx>
+  <Pattern_Default_Font_Unused>{{self::rgb(color=overlay0)}}</Pattern_Default_Font_Unused>
+  <Pattern_Highlighted_Back>{{self::rgb(color=surface0)}}</Pattern_Highlighted_Back>
+  <Pattern_Highlighted_Font>{{self::rgb(color=text)}}</Pattern_Highlighted_Font>
+  <Pattern_Highlighted_Font_Volume>{{self::rgb(color=pink)}}</Pattern_Highlighted_Font_Volume>
+  <Pattern_Highlighted_Font_Panning>{{self::rgb(color=blue)}}</Pattern_Highlighted_Font_Panning>
+  <Pattern_Highlighted_Font_Pitch>{{self::rgb(color=red)}}</Pattern_Highlighted_Font_Pitch>
+  <Pattern_Highlighted_Font_Delay>{{self::rgb(color=blue)}}</Pattern_Highlighted_Font_Delay>
+  <Pattern_Highlighted_Font_Global>{{self::rgb(color=rosewater)}}</Pattern_Highlighted_Font_Global>
+  <Pattern_Highlighted_Font_Other>{{self::rgb(color=mauve)}}</Pattern_Highlighted_Font_Other>
+  <Pattern_Highlighted_Font_DspFx>{{self::rgb(color=text)}}</Pattern_Highlighted_Font_DspFx>
+  <Pattern_Highlighted_Font_Unused>{{self::rgb(color=overlay0)}}</Pattern_Highlighted_Font_Unused>
+  <Pattern_PlayPosition_Back>{{self::rgb(color=mauve)}}</Pattern_PlayPosition_Back>
+  <Pattern_PlayPosition_Font>{{self::rgb(color=base)}}</Pattern_PlayPosition_Font>
+  <Pattern_CenterBar_Back>{{self::rgb(color=surface1)}}</Pattern_CenterBar_Back>
+  <Pattern_CenterBar_Font>{{self::rgb(color=text)}}</Pattern_CenterBar_Font>
+  <Pattern_CenterBar_Back_StandBy>{{self::rgb(color=surface0)}}</Pattern_CenterBar_Back_StandBy>
+  <Pattern_CenterBar_Font_StandBy>{{self::rgb(color=subtext0)}}</Pattern_CenterBar_Font_StandBy>
+  <Pattern_Selection>{{self::rgb(color=subtext0)}}</Pattern_Selection>
+  <Pattern_StandBy_Selection>{{self::rgb(color=surface0)}}</Pattern_StandBy_Selection>
+  <Pattern_Mute_State>{{self::rgb(color=yellow)}}</Pattern_Mute_State>
+  <Automation_Grid>{{self::rgb(color=surface0)}}</Automation_Grid>
+  <Automation_Line_Edge>{{self::rgb(color=blue)}}</Automation_Line_Edge>
+  <Automation_Line_Fill>{{self::rgb(color=flavor.colors[accent])}}</Automation_Line_Fill>
+  <Automation_Point>{{self::rgb(color=text)}}</Automation_Point>
+  <Automation_Marker_Play>{{self::rgb(color=flavor.colors[accent])}}</Automation_Marker_Play>
+  <Automation_Marker_Single>{{self::rgb(color=flavor.colors[accent])}}</Automation_Marker_Single>
+  <Automation_Marker_Pair>{{self::rgb(color=flavor.colors[accent])}}</Automation_Marker_Pair>
+  <Automation_Marker_Diamond>{{self::rgb(color=blue)}}</Automation_Marker_Diamond>
+  <VuMeter_Meter>{{self::rgb(color=text)}}</VuMeter_Meter>
+  <VuMeter_Meter_Low>{{self::rgb(color=green)}}</VuMeter_Meter_Low>
+  <VuMeter_Meter_Middle>{{self::rgb(color=yellow)}}</VuMeter_Meter_Middle>
+  <VuMeter_Meter_High>{{self::rgb(color=red)}}</VuMeter_Meter_High>
+  <VuMeter_Peak>{{self::rgb(color=maroon)}}</VuMeter_Peak>
+  <VuMeter_Back_Normal>{{self::rgb(color=surface0)}}</VuMeter_Back_Normal>
+  <VuMeter_Back_Clipped>{{self::rgb(color=pink)}}</VuMeter_Back_Clipped>
+  <Default_Color_01>{{self::rgb(color=red)}}</Default_Color_01>
+  <Default_Color_02>{{self::rgb(color=peach)}}</Default_Color_02>
+  <Default_Color_03>{{self::rgb(color=yellow)}}</Default_Color_03>
+  <Default_Color_04>{{self::rgb(color=green)}}</Default_Color_04>
+  <Default_Color_05>{{self::rgb(color=sapphire)}}</Default_Color_05>
+  <Default_Color_06>{{self::rgb(color=lavender)}}</Default_Color_06>
+  <Default_Color_07>{{self::rgb(color=blue)}}</Default_Color_07>
+  <Default_Color_08>{{self::rgb(color=mauve)}}</Default_Color_08>
+  <Default_Color_09>{{self::rgb(color=pink)}}</Default_Color_09>
+  <Default_Color_10>{{self::rgb(color=flamingo)}}</Default_Color_10>
+  <Default_Color_11>{{self::rgb(color=rosewater)}}</Default_Color_11>
+  <Default_Color_12>{{self::rgb(color=overlay1)}}</Default_Color_12>
+  <Default_Color_13>{{self::rgb(color=overlay0)}}</Default_Color_13>
+  <Default_Color_14>{{self::rgb(color=surface2)}}</Default_Color_14>
+  <Default_Color_15>{{self::rgb(color=surface1)}}</Default_Color_15>
+  <Default_Color_16>{{self::rgb(color=surface0)}}</Default_Color_16>
+  <ButtonBevalAmount>1</ButtonBevalAmount>
+  <BodyBevalAmount>1</BodyBevalAmount>
+  <ContrastAdjustment>0</ContrastAdjustment>
+  <TextureSet>None</TextureSet>
+</SkinColors>
