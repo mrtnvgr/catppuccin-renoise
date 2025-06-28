@@ -6,7 +6,7 @@ whiskers:
     - accent
   filename: "themes/{{flavor.identifier}}/catppuccin-{{flavor.identifier}}-{{accent}}.xrnc"
 ---
-{% macro rgb(color) %}{{color.rgb.r}},{{color.rgb.g}},{{color.rgb.b}}{% endmacro rgb %}<?xml version="1.0" encoding="UTF-8"?>
+{% macro rgb(color) %}{{color.rgb.r}},{{color.rgb.g}},{{color.rgb.b}}{% endmacro rgb %}{% set selection_bg = base | mix(color=overlay2, amount=0.2) %}<?xml version="1.0" encoding="UTF-8"?>
 <SkinColors doc_version="12">
   <Main_Back>{{self::rgb(color=base)}}</Main_Back>
   <Main_Font>{{self::rgb(color=text)}}</Main_Font>
@@ -54,15 +54,15 @@ whiskers:
   <Pattern_Highlighted_Font_Other>{{self::rgb(color=mauve)}}</Pattern_Highlighted_Font_Other>
   <Pattern_Highlighted_Font_DspFx>{{self::rgb(color=text)}}</Pattern_Highlighted_Font_DspFx>
   <Pattern_Highlighted_Font_Unused>{{self::rgb(color=overlay0)}}</Pattern_Highlighted_Font_Unused>
-  <Pattern_PlayPosition_Back>{{self::rgb(color=mauve)}}</Pattern_PlayPosition_Back>
+  <Pattern_PlayPosition_Back>{{self::rgb(color=flavor.colors[accent])}}</Pattern_PlayPosition_Back>
   <Pattern_PlayPosition_Font>{{self::rgb(color=base)}}</Pattern_PlayPosition_Font>
   <Pattern_CenterBar_Back>{{self::rgb(color=surface1)}}</Pattern_CenterBar_Back>
   <Pattern_CenterBar_Font>{{self::rgb(color=text)}}</Pattern_CenterBar_Font>
   <Pattern_CenterBar_Back_StandBy>{{self::rgb(color=surface0)}}</Pattern_CenterBar_Back_StandBy>
   <Pattern_CenterBar_Font_StandBy>{{self::rgb(color=subtext0)}}</Pattern_CenterBar_Font_StandBy>
-  <Pattern_Selection>{{self::rgb(color=subtext0)}}</Pattern_Selection>
+  <Pattern_Selection>{{self::rgb(color=selection_bg)}}</Pattern_Selection>
   <Pattern_StandBy_Selection>{{self::rgb(color=surface0)}}</Pattern_StandBy_Selection>
-  <Pattern_Mute_State>{{self::rgb(color=yellow)}}</Pattern_Mute_State>
+  <Pattern_Mute_State>{{self::rgb(color=text)}}</Pattern_Mute_State>
   <Automation_Grid>{{self::rgb(color=surface0)}}</Automation_Grid>
   <Automation_Line_Edge>{{self::rgb(color=blue)}}</Automation_Line_Edge>
   <Automation_Line_Fill>{{self::rgb(color=flavor.colors[accent])}}</Automation_Line_Fill>

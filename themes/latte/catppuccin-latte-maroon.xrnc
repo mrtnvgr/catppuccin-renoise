@@ -46,15 +46,15 @@
   <Pattern_Highlighted_Font_Other>136,57,239</Pattern_Highlighted_Font_Other>
   <Pattern_Highlighted_Font_DspFx>76,79,105</Pattern_Highlighted_Font_DspFx>
   <Pattern_Highlighted_Font_Unused>156,160,176</Pattern_Highlighted_Font_Unused>
-  <Pattern_PlayPosition_Back>136,57,239</Pattern_PlayPosition_Back>
+  <Pattern_PlayPosition_Back>230,69,83</Pattern_PlayPosition_Back>
   <Pattern_PlayPosition_Font>239,241,245</Pattern_PlayPosition_Font>
   <Pattern_CenterBar_Back>188,192,204</Pattern_CenterBar_Back>
   <Pattern_CenterBar_Font>76,79,105</Pattern_CenterBar_Font>
   <Pattern_CenterBar_Back_StandBy>204,208,218</Pattern_CenterBar_Back_StandBy>
   <Pattern_CenterBar_Font_StandBy>108,111,133</Pattern_CenterBar_Font_StandBy>
-  <Pattern_Selection>108,111,133</Pattern_Selection>
+  <Pattern_Selection>147,150,167</Pattern_Selection>
   <Pattern_StandBy_Selection>204,208,218</Pattern_StandBy_Selection>
-  <Pattern_Mute_State>223,142,29</Pattern_Mute_State>
+  <Pattern_Mute_State>76,79,105</Pattern_Mute_State>
   <Automation_Grid>204,208,218</Automation_Grid>
   <Automation_Line_Edge>30,102,245</Automation_Line_Edge>
   <Automation_Line_Fill>230,69,83</Automation_Line_Fill>
