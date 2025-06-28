@@ -24,7 +24,7 @@
   <ValueBox_Font>76,79,105</ValueBox_Font>
   <ValueBox_Font_Icons>108,111,133</ValueBox_Font_Icons>
   <Scrollbar>204,208,218</Scrollbar>
-  <Slider>76,79,105</Slider>
+  <Slider>32,159,181</Slider>
   <Folder>32,159,181</Folder>
   <Pattern_Default_Back>230,233,239</Pattern_Default_Back>
   <Pattern_Default_Font>108,111,133</Pattern_Default_Font>

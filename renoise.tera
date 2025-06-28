@@ -32,7 +32,7 @@ whiskers:
   <ValueBox_Font>{{self::rgb(color=text)}}</ValueBox_Font>
   <ValueBox_Font_Icons>{{self::rgb(color=subtext0)}}</ValueBox_Font_Icons>
   <Scrollbar>{{self::rgb(color=surface0)}}</Scrollbar>
-  <Slider>{{self::rgb(color=text)}}</Slider>
+  <Slider>{{self::rgb(color=flavor.colors[accent])}}</Slider>
   <Folder>{{self::rgb(color=flavor.colors[accent])}}</Folder>
   <Pattern_Default_Back>{{self::rgb(color=mantle)}}</Pattern_Default_Back>
   <Pattern_Default_Font>{{self::rgb(color=subtext0)}}</Pattern_Default_Font>
