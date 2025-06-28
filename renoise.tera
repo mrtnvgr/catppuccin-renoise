@@ -4,7 +4,7 @@ whiskers:
   matrix:
     - flavor
     - accent
-  filename: "catppuccin-{{flavor.identifier}}-{{accent}}.xrnc"
+  filename: "themes/{{flavor.identifier}}/catppuccin-{{flavor.identifier}}-{{accent}}.xrnc"
 ---
 {% macro rgb(color) %}{{color.rgb.r}},{{color.rgb.g}},{{color.rgb.b}}{% endmacro rgb %}<?xml version="1.0" encoding="UTF-8"?>
 <SkinColors doc_version="12">
