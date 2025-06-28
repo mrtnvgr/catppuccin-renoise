@@ -89,8 +89,8 @@ whiskers:
   <Default_Color_09>{{self::rgb(color=pink)}}</Default_Color_09>
   <Default_Color_10>{{self::rgb(color=flamingo)}}</Default_Color_10>
   <Default_Color_11>{{self::rgb(color=rosewater)}}</Default_Color_11>
-  <Default_Color_12>{{self::rgb(color=overlay1)}}</Default_Color_12>
-  <Default_Color_13>{{self::rgb(color=overlay0)}}</Default_Color_13>
+  <Default_Color_12>{{self::rgb(color=teal)}}</Default_Color_12>
+  <Default_Color_13>{{self::rgb(color=sky)}}</Default_Color_13>
   <Default_Color_14>{{self::rgb(color=surface2)}}</Default_Color_14>
   <Default_Color_15>{{self::rgb(color=surface1)}}</Default_Color_15>
   <Default_Color_16>{{self::rgb(color=surface0)}}</Default_Color_16>
