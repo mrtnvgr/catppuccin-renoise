@@ -36,6 +36,10 @@
 
 ## Usage
 
+**Catppuccin themes are now shipped with Renoise** since version 3.5 (`yellow` accent).
+
+### Install
+
 1. Download the flavor + accent combination of your choice from [themes](./themes) directory.
 2. Open the app and go to **Edit** > **Preferences** > **Theme** > **Import**.
 3. Select your downloaded file.
